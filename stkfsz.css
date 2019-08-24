@@ -1,0 +1,471 @@
+* {
+  font-family: 'Fjalla One', sans-serif;
+}
+body {
+  /*
+  background: linear-gradient(315deg, rgba(49,159,131,.35), rgba(89,162,221,.35), rgba(195,90,227,.35), rgba(225,94,94,.35));
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  */
+
+  background-color: #fff;
+  /* background: linear-gradient(134deg, rgba(42, 154, 217, .5), rgba(70, 191, 165, .5), rgba(108, 191, 70, .5), rgba(168, 198, 45, .5)); */
+  background: linear-gradient(45deg, rgba(111, 210, 150, .5), rgba(111, 210, 198, .5), rgba(111, 152, 210, .5));
+  background-size: 600% 100%;
+
+  -webkit-animation: ColorShiftingBG 30s ease infinite;
+  -moz-animation: ColorShiftingBG 30s ease infinite;
+  animation: ColorShiftingBG 30s ease infinite;
+
+  font-size: .6em;
+  font-family: 'Fjalla One', sans-serif;
+}
+/* Fix for resizing font size for different size/resoltion screens */
+@media (min-width:320px) {
+  body {
+    /* Never get larger than this */
+    font-size: .6em;
+  }
+}
+@media (min-width:360px) {
+  body {
+    /* Never get larger than this */
+    font-size: .7em;
+  }
+}
+@media (min-width:600px) {
+  body {
+    /* Never get larger than this */
+    font-size: .8em;
+  }
+}
+@media (min-width:1408px) {
+  body {
+    /* Never get larger than this */
+    font-size: .9em;
+  }
+}
+@media (min-width:1450px) {
+  body {
+    /* Never get larger than this */
+    font-size: 1em;
+  }
+}
+@-webkit-keyframes ColorShiftingBG {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes ColorShiftingBG {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes ColorShiftingBG {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+.name_header {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 7em;
+  letter-spacing: -2px;
+  color: #fff;
+  background: #000;
+  padding: 10px 10px 0 0;
+  vertical-align: baseline;
+  line-height: .9em;
+  margin: 0 auto;
+  font-weight: bold;
+  position: relative;
+    top: -30px;
+  width: 100%;
+  text-align: justify;
+  text-align: center;
+  /*mix-blend-mode: multiply;*/
+  transition: background .3s ease-out;
+}
+/* Fix for resizing header to look nice on all resolutions as it scales down -
+    tested down to 300px width */
+@media (min-width:300px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 8em;
+  }
+}
+@media (min-width:400px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 9em;
+  }
+}
+@media (min-width:450px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 10.5em;
+  }
+}
+@media (min-width:500px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 11em;
+  }
+}
+@media (min-width:550px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 11.5em;
+  }
+}
+@media (min-width:600px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 11.5em;
+  }
+}
+@media (min-width:660px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 14em;
+  }
+}
+@media (min-width:750px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 16em;
+  }
+}
+@media (min-width:800px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 8.5em;
+  }
+}
+@media (min-width:935px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 10em;
+  }
+}
+@media (min-width:1216px) {
+  .name_header {
+    /* Never get larger than this */
+    font-size: 12em;
+  }
+}
+/*
+.name_header:hover {
+  mix-blend-mode: darken;
+  color: #000;
+  background: #fff;
+}
+*/
+.sub_header {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  position: relative;
+    top: -2px;
+}
+.sub_link {
+  margin-top, margin-bottom: 0 !important;
+  padding-top, padding-bottom: 0 !important;
+  /*margin-right: 100px;*/
+  font-size: 1.6em;
+  color: #000;
+  font-weight: bold;
+  line-height: .8em;
+}
+/* Fix for resizing contact info to look nice on all resolutions as it scales down -
+    tested down to 395px width */
+@media (min-width:395px) {
+  .sub_link {
+    font-size: 1.8em;
+  }
+}
+@media (min-width:1024px) {
+  .sub_link {
+    font-size: 1.6em;
+  }
+}
+@media (min-width:1216px) {
+  .sub_link {
+    font-size: 1.8em;
+  }
+}
+.sub_link a {
+  font-size: 1.3em;
+  color: #000;
+  background: rgba(255,255,255,1);
+  padding: 0 4px 0 4px;
+  transition: background .5s ease-out;
+  transition: color .3s ease-out;
+}
+.sub_link a:hover {
+  font-size: 1.3em;
+  color: #fff;
+  background: rgba(0,0,0,1);
+  padding: 0 4px 0 4px;
+}
+.container {
+  margin: 0 auto;
+}
+#divider {
+  width: 100%;
+  height: 10px;
+  background: #000;
+  margin: 1.2em 0 1.2em 0;
+}
+#invisible-divider {
+  width: 100%;
+  height: 40px;
+  clear: both;
+}
+#zero-divider {
+  height: 0;
+  width: 100%;
+  clear: both;
+}
+.section_bg {
+  background: rgba(255,255,255,.4);
+  padding-bottom: 15px;
+  transition: background .3s ease-out;
+}
+.section_bg_scrl, .section_bg:hover {
+  background: rgba(255,255,255,.6);
+  padding-bottom: 15px;
+}
+.section_head {
+  display: inline-block;
+  font-size: 2em;
+  color: #fff;
+  background: #000;
+  margin-bottom: 15px;
+  padding: 0 8px 0 8px;
+  clear: both;
+}
+.section_text {
+  font-family: 'Raleway', sans-serif !important;
+  margin-left: 2%;
+  font-size: 1.6em;
+  clear: both;
+  color: #000;
+  line-height: 1.4em !important;
+  padding-right: 2%;
+  letter-spacing: .25px;
+  text-align: justify;
+}
+.div_col_block {
+  clear: both;
+}
+.col_list_blk {
+  display: inline-block;
+  margin: 0 0 7px 0 !important;
+  padding: 0 !important;
+}
+.div_l_col {
+  font-family: 'Raleway', sans-serif !important;
+  /*float: left;
+  width: 20%;*/
+  line-height: 1.6em;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.div_l_col b {
+  font-family: 'Raleway', sans-serif !important;
+}
+.div_r_col {
+  font-family: 'Raleway', sans-serif !important;
+  text-align: left;
+  /*float: left;
+  width: 75%;*/
+  line-height: 1.6em;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.proj_bg {
+  opacity: 0.85;
+  width: 92%;
+  font-size: .86em;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 10px;
+  transition: opacity .3s ease-out, font-size .3s ease-out, width .3s ease-out, margin .3s ease-out, position .3s ease-out;
+}
+.proj_bg:hover, .proj_bg_scrl {
+  opacity: 1;
+  width: 100%;
+  font-size: .95em;
+  margin: 0 auto;
+  position: relative;
+    top: -6px;
+}
+.proj_bg:hover > .proj_grid, .proj_bg_scrl > .proj_grid {
+  height: 250px;
+}
+.proj_bg:hover > .proj_desc, .proj_bg_scrl > .proj_desc  {
+  height: 22.5em;
+}
+.proj_grid {
+  background-repeat: no-repeat;
+  background-size: 100% auto !important;
+  height: 200px;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: bottom !important;
+  color: #fff;
+  border: 4px solid #111111;
+  border-bottom: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  transition: height .3s ease-out;
+}
+.proj_txt {
+  vertical-align: bottom !important;
+  width: 100%;
+  color: white;
+  font-size: .9em;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-weight: normal;
+  letter-spacing: .6px;
+  margin: 0;
+  text-align: center;
+}
+.proj_desc {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 22em;
+  color: white;
+  font-size: .8em;
+  line-height: 1.4em !important;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.9);
+  padding: 8px;
+  font-weight: 100;
+  letter-spacing: .9px;
+  text-align: left;
+  font-weight: 500;
+  border: 4px solid rgba(0,0,0,.4);
+  border-top: none;
+  overflow: hidden;
+
+}
+.proj_desc ul {
+  font-family: 'Raleway', sans-serif;
+  margin-left: 20px;
+  list-style-type: square !important;
+  list-style-position: outside !important;
+  margin-top: 5px;
+  text-align: left;
+}
+.proj_desc li {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5px;
+  text-align: left;
+  font-weight: normal;
+}
+/* Fix for the project title text position moving too far down on smaller resolutions*/
+@media (min-width:0px) {
+  .proj_txt {
+    /* Never get larger than this */
+    bottom: -70%;
+  }
+}
+@media (min-width:430px) {
+  .proj_txt {
+    /* Never get larger than this */
+    bottom: -80%;
+  }
+}
+@media (min-width:1024px) {
+  .proj_txt {
+    /* Never get larger than this */
+    bottom: -60%;
+  }
+}
+input.contact-form {
+  border: 3px solid rgba(255,255,255,.5);
+  background: rgba(255,255,255,.3);
+  padding: 10px 5px;
+  outline: none;
+  margin: 10px 0 0 0;
+  -webkit-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  text-align: left;
+  color: #000;
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+}
+.contact-form-textarea {
+  border: 3px solid rgba(255,255,255,.5);
+  background: rgba(255,255,255,.3);
+  padding: 10px 5px;
+  outline: none;
+  margin: 10px 0 0 0;
+  -webkit-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  text-align: left;
+  height: 13em;
+  color: #000;
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+}
+input:focus.contact-form {
+  border: 3px solid rgba(255,255,255,1);
+  background: rgba(255,255,255,.75);
+  color: #000;
+}
+input:hover.contact-form {
+  border: 3px solid rgba(255,255,255,.9);
+  background: rgba(255,255,255,.65);
+  color: #000;
+}
+.contact-form-textarea:focus {
+  border: 3px solid rgba(255,255,255,1);
+  background: rgba(255,255,255,.75);
+  color: #000;
+}
+.contact-form-textarea:hover {
+  border: 3px solid rgba(255,255,255,.9);
+  background: rgba(255,255,255,.65);
+  color: #000;
+}
+#contact-submit {
+  background: rgba(255,255,255,1);
+  color: #000;
+  opacity: .7;
+  border: 0;
+  padding: 12px;
+  margin-top: 8px;
+  transition: background 0.3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  font-size: 1.2em;
+  font-family: 'Fjalla One', sans-serif !important;
+  float: right;
+  margin-right: 1%;
+}
+#contact-submit:hover {
+  background: rgba(0,0,0,.85);
+  color: #fff;
+  opacity: 1;
+}
+.foot_copy {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+}
+.foot_copy_text {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 0 5px 0 5px;
+}
